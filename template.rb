@@ -167,7 +167,7 @@ after "deploy", "redmine:update"
 END
 
 file 'config/deploy.rb', <<-END
-lock ''
+lock '3.2.0'
 
 set :user, "synbioz"
 set :application, ''
