@@ -138,6 +138,7 @@ run "mkdir -p config/puma"
 get "#{GITHUB_BASE_URL}/config/puma/production.rb", "config/puma/production.rb"
 get "#{GITHUB_BASE_URL}/config/puma/staging.rb", "config/puma/staging.rb"
 
+remove_file 'config/deploy/staging.rb'
 file 'config/deploy/staging.rb', <<-END
 
 server '', user: 'synbioz', roles: %w{web app db}
