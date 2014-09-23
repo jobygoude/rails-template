@@ -191,7 +191,7 @@ set :bundle_flags, "--quiet"
 set :rbenv_type, :user
 set :rbenv_ruby, "#{RUBY_VERSION}"
 
-set :puma_conf, -> { File.join(release_path, 'config', 'puma', "#{fetch(:stage)}.rb") }
+set :puma_conf, -> { File.join(release_path, 'config', 'puma', fetch(:stage) + '.rb') }
 # Do not perform the puma's check task because the config file
 # is in the source tree. The check method will try to upload
 # a config file but will never succeed.
