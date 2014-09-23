@@ -149,7 +149,6 @@ get "#{GITHUB_BASE_URL}/config/puma/staging.rb", "config/puma/staging.rb"
 
 remove_file 'config/deploy/staging.rb'
 file 'config/deploy/staging.rb', <<-END
-
 server '', user: 'synbioz', roles: %w{web app db}
 
 set :rails_env, 'staging'
