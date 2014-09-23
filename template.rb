@@ -108,7 +108,16 @@ test:
 END
 
 remove_file 'README.rdoc'
-file 'README.md'
+file 'README.md', <<-END
+# README
+
+## TODO
+
+- Complete puma configuration
+- Complete capistrano configuration
+- Complete redmine configuration (deploy/staging.rb)
+- You may have to change lock version in deploy.rb
+END
 
 rake "db:create"
 
