@@ -166,6 +166,7 @@ after 'deploy', 'copy_no_robots_file'
 after "deploy", "redmine:update"
 END
 
+remove_file 'config/deploy.rb'
 file 'config/deploy.rb', <<-END
 lock '3.2.0'
 
