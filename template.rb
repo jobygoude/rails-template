@@ -1,6 +1,6 @@
 require 'etc'
 
-GITHUB_BASE_URL = "https://raw.githubusercontent.com/synbioz/rails-template/master".freeze
+GITHUB_BASE_URL = "https://raw.githubusercontent.com/jobygoude/rails-template/master".freeze
 RUBY_VERSION    = "2.2.0".freeze
 
 username        = Etc.getlogin
