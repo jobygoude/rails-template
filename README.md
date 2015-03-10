@@ -4,4 +4,4 @@ An up-to-date template based on the latest versions of ruby and rails and all th
 
 ## Usage
 
-  rails new app -m https://raw.githubusercontent.com/synbioz/rails-template/master/template.rb
+  rails new app -m https://raw.githubusercontent.com/jobygoude/rails-template/master/template.rb
